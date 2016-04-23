@@ -12,7 +12,7 @@ public class RandomListNode {
 	public RandomListNode next, random;
 	public RandomListNode(int x) { this.label = x; }
 	
-	/**
+	/*
 	 * Self-defined methods
 	 */
 	public String toString() {
