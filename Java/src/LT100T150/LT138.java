@@ -10,8 +10,9 @@ import utilities.RandomListNode;
  * 
  * https://leetcode.com/problems/copy-list-with-random-pointer/
  * 
- * A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
- * Return a deep copy of the list.
+ * A linked list is given such that each node contains an additional random
+ * pointer which could point to any node in the list or null. Return a deep copy
+ * of the list.
  * 
  * Related: 133 - Clone Graph ( https://leetcode.com/problems/clone-graph/ )
  * 
@@ -22,13 +23,13 @@ import utilities.RandomListNode;
 public class LT138 {
 	/**
 	 * 
-	 * Hash Map Method 
-	 * Old - ABCD New - abcd
-	 * Use a map to record the node pairs: (Aa) (Bb) (Cc) (Dd)
+	 * Hash Map Method Old - ABCD New - abcd Use a map to record the node pairs:
+	 * (Aa) (Bb) (Cc) (Dd)
 	 * 
 	 * Time: O(n); Space: O(n)
 	 * 
-	 * @param head The first node of the original linked list
+	 * @param head
+	 *            The first node of the original linked list
 	 * @return
 	 */
 	public RandomListNode copyRandomList1(RandomListNode head) {
@@ -56,12 +57,13 @@ public class LT138 {
 
 	/**
 	 * 
-	 * Old - ABCD New - abcd
-	 * Use the next pointer to link all nodes together: AaBbCcDd
+	 * Old - ABCD New - abcd Use the next pointer to link all nodes together:
+	 * AaBbCcDd
 	 * 
 	 * Time: O(n); Space: O(1)
 	 * 
-	 * @param head The first node of the original linked list
+	 * @param head
+	 *            The first node of the original linked list
 	 * @return
 	 */
 	public RandomListNode copyRandomList2(RandomListNode head) {
