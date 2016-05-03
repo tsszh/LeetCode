@@ -26,7 +26,7 @@ public class ListNodeFactoryTest {
 	public int len;
 	
 	@Test
-	public void test() {
+	public void test1() {
 		ListNode head = ListNodeFactory.createListNode( len );
 		for ( int i = 0; i < len; i++ ) {
 			assertTrue( head != null );
@@ -34,5 +34,19 @@ public class ListNodeFactoryTest {
 			head = head.next;
 		}
 		assertTrue( head == null );
+	}
+	
+	@Test
+	public void test2() {
+		int[] vals = new int[len];
+		for ( int i = 0; i < len; i++ ) {
+			vals[i] = len - i;
+		}
+		ListNode head = ListNodeFactory.creatListNode(vals);
+		for ( int i = 0; i < len; i++ ) {
+			assertTrue( head != null );
+			assertEquals( head.val, len-i );
+			head = head.next;
+		}
 	}
 }

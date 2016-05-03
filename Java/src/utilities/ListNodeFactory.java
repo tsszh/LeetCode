@@ -15,4 +15,20 @@ public class ListNodeFactory {
 		}
 		return head;
 	}
+	
+	/**
+	 * Create a Linked List based on the value arrays
+	 * @param vals The integer array of node values
+	 * @return The head of the linked list
+	 */
+	public static ListNode creatListNode ( int[] vals ) {
+		int len = vals.length;
+		if ( len <= 0 ) return null;
+		ListNode head = new ListNode(vals[0]), curr = head;
+		for ( int i = 1; i < len; i++ ) {
+			curr.next = new ListNode( vals[i] );
+			curr = curr.next;
+		}
+		return head;
+	}
 }
