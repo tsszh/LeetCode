@@ -1,19 +1,15 @@
 package LT150T200;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-
-import utilities.ListNode;
-import utilities.ListNodeFactory;
 
 @RunWith(Parameterized.class)
 public class LT162Test {
