@@ -1,8 +1,5 @@
 package LT350T400;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * 389. Find the Difference
  * 
