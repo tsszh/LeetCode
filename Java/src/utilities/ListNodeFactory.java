@@ -31,4 +31,23 @@ public class ListNodeFactory {
 		}
 		return head;
 	}
+	
+	/**
+	 * Convert a linked list to an array.
+	 * 
+	 * @param root
+	 * @return
+	 */
+	public static int[] toArray( ListNode root ) {
+		int n = 0;
+		for (ListNode pt = root; pt != null; pt = pt.next) {
+			n++;
+		}
+		int[] res = new int[n];
+		n = 0;
+		for (ListNode pt = root; pt != null; pt = pt.next) {
+			res[n++] = pt.val;
+		}
+		return res;
+	}
 }

@@ -43,10 +43,6 @@ public class ListNodeFactoryTest {
 			vals[i] = len - i;
 		}
 		ListNode head = ListNodeFactory.creatListNode(vals);
-		for ( int i = 0; i < len; i++ ) {
-			assertTrue( head != null );
-			assertEquals( head.val, len-i );
-			head = head.next;
-		}
+		assertArrayEquals(vals, ListNodeFactory.toArray(head));
 	}
 }
